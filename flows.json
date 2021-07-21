@@ -1,1 +1,61 @@
-[{"id":"7493e9ee.4b09e8","type":"comment","z":"7815539e.9ef41c", "name":"Node-Red y Git","info":"","x":360,"y":100,"wires":[]}]
+[
+    {
+        "id": "a31e3ce7.28626",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7493e9ee.4b09e8",
+        "type": "comment",
+        "z": "a31e3ce7.28626",
+        "name": "Node-Red y Git",
+        "info": "",
+        "x": 420,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a1c7f89e.e7e018",
+        "type": "inject",
+        "z": "a31e3ce7.28626",
+        "name": "Mensaje",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Mensaje desde Node-Red para GitHub",
+        "payloadType": "str",
+        "x": 270,
+        "y": 120,
+        "wires": [
+            [
+                "8cbba4ea.a33478"
+            ]
+        ]
+    },
+    {
+        "id": "8cbba4ea.a33478",
+        "type": "debug",
+        "z": "a31e3ce7.28626",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 520,
+        "y": 120,
+        "wires": []
+    }
+]
